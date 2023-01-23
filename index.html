@@ -5,9 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="/scripts.js"></script>
+    <script src="/index.js"></script>
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <p>object test</p>
+    <div class="outerdiv"><div class="innerdiv">
+        <form id="addCity">
+        <label for="newCityName">Please add the name of the new city:</label>
+        <input type="text" name="newCityName" id="newCityName">
+        <br>
+        <label for="newCityAddress">Please add the address of the landmark: </label>
+        <input type="text" name="newCityAddress" id="newCityAddress">
+        <br>
+        <label for="newCityLandmark">Please enter the name of the landmark:</label>
+        <input type="text" name="newCityLandmark" id="newCityLandmark">
+        <br>
+        <label for="newCityTimeOfYear">Please enter the season or the month that you were at the landmark:</label>
+        <input type="text" name="newCityTimeOfYear" id="newCityTimeOfYear">
+        <br>
+        <button type="submit">Submit</button>
+    </form></div></div>
+    
+    <h2>Cities: </h2>
+    <div id="cities"></div>
+
+    <div id="cities-details" class="hidden">
+        <h2>city detail</h2>
+        <p>City Address of landmark: <span class="address"></span></p>
+        <p>Name of landmark: <span class="landmark"></span></p>
+        <p>Time of year visited: <span class="time"></span></p>
+
+
+
+    </div>
+
+
+
 </body>
 </html>
